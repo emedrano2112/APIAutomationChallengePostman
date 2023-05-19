@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "1bec7eec-2b6a-4b90-bb82-b444c55f4650",
+		"name": "ReqResAutomationChallenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4595054"
+	},
+	"item": [
+		{
+			"name": "userRequests",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "userSpecificIDExtracted",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/users/{{GeorgeID}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users",
+						"{{GeorgeID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createNewUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/users",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
